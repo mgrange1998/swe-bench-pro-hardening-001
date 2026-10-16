@@ -7,7 +7,7 @@ workstream = "swe_public_repo"
 description = "Derisk hardening task 2 for repogen-hardening-6000 evolution loop canary"
 authors = [{ name = "Matthew Grange", email = "mgrange@meta.com" }]
 keywords = ["python", "hardening", "derisk"]
-track_assignment = "swe-bench-pro"
+track_assignment = "swe-bench-external-repos"
 
 [metadata]
 author_name = "Matthew Grange"
@@ -15,6 +15,9 @@ author_email = "mgrange@meta.com"
 difficulty = "medium"
 category = "debugging"
 languages = ["python"]
+reward_type = "binary"
+category_usecase = "debugging"
+category_subdomain = "backend_services"
 tags = ["semi-synthetic-evolution", "synthetic-evolution:repogen-hardening-6000", "generator:repogen-hardening-6000", "auto-review-eligible", "avocado-5.16", "swe-bench-pro"]
 
 [verifier]
@@ -40,8 +43,8 @@ synthetic_model = ["avocado-5.16"]
 
 [task_lineage]
 root_id = "nyp_google__snappy-27ab5f7-v1"
-root_track_assignment = "swe-bench-pro"
+root_track_assignment = "swe-bench-external-repos"
 root_sha = "27ab5f7f518430a021239bc26a5b2fd64affbc7b"
 parent_id = "nyp_google__snappy-27ab5f7-v1"
-parent_track_assignment = "swe-bench-pro"
+parent_track_assignment = "swe-bench-external-repos"
 parent_sha = "27ab5f7f518430a021239bc26a5b2fd64affbc7b"
