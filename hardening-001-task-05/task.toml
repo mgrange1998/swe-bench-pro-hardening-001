@@ -1,0 +1,47 @@
+version = "1.0"
+
+[task]
+name = "mgrange1998/hardening-001-task-05"
+format = "swe_bench_single_turn"
+workstream = "swe_public_repo"
+description = "Derisk hardening task 5 for repogen-hardening-6000 evolution loop canary"
+authors = [{ name = "Matthew Grange", email = "mgrange@meta.com" }]
+keywords = ["python", "hardening", "derisk"]
+track_assignment = "swe-bench-pro"
+
+[metadata]
+author_name = "Matthew Grange"
+author_email = "mgrange@meta.com"
+difficulty = "medium"
+category = "debugging"
+languages = ["python"]
+tags = ["semi-synthetic-evolution", "synthetic-evolution:repogen-hardening-6000", "generator:repogen-hardening-6000", "auto-review-eligible", "avocado-5.16", "swe-bench-pro"]
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
+
+[synthetic_pipeline_metadata]
+pipeline_name = "repogen-hardening-6000"
+pipeline_version = "1.0.0"
+synthetic_type = "semi-synthetic"
+synthetic_model = ["avocado-5.16"]
+
+[task_lineage]
+root_id = "nyp_google__snappy-27ab5f7-v1"
+root_track_assignment = "swe-bench-pro"
+root_sha = "27ab5f7f518430a021239bc26a5b2fd64affbc7b"
+parent_id = "nyp_google__snappy-27ab5f7-v1"
+parent_track_assignment = "swe-bench-pro"
+parent_sha = "27ab5f7f518430a021239bc26a5b2fd64affbc7b"
