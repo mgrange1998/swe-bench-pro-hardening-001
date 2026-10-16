@@ -16,7 +16,7 @@ difficulty = "medium"
 category = "debugging"
 languages = ["python"]
 reward_type = "binary"
-category_usecase = "debugging"
+category_usecase = "logic_errors"
 category_subdomain = "backend_services"
 tags = ["semi-synthetic-evolution", "synthetic-evolution:repogen-hardening-6000", "generator:repogen-hardening-6000", "auto-review-eligible", "avocado-5.16", "swe-bench-pro"]
 
